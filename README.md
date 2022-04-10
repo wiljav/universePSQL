@@ -4,14 +4,14 @@
 ### Database Structure
 ```
 .
-└── Universe/
-    ├── galaxy/
+└── Universe
+    ├── galaxy
     │   ├── galaxy_id (type = SEQUENCE)   ->  primary key
     │   ├── name (type = VARCHAR(40))
     │   ├── mass_in_bill_earth_mass
     │   ├── satellite_galaxy (type = BOOL)
     │   └── humans_galaxy (type = BOOL)
-    ├── star/
+    ├── star
     │   ├── galaxy_id (type = INT)        ->  foreign key
     │   ├── star_id (type = SEQUENCE)     ->  primary key
     │   ├── name (type = VARCHAR(40))
@@ -20,7 +20,7 @@
     │   ├── humans_star (type = BOOL)
     │   ├── binary_star (type = BOOL)
     │   └── age_in_bill_years (type = numeric(4,1))
-    ├── planet/
+    ├── planet
     │   ├── galaxy_id (type = INT)        ->  foreign key
     │   ├── star_id (type = INT)          ->  foreign key
     │   ├── planet_id (type = SEQUENCE)   ->  primary key
@@ -29,7 +29,7 @@
     │   ├── moons (type = INT)
     │   ├── habitable (type = BOOL)
     │   └── mass_in_earth_mass (type = numeric(4,1))
-    └── moon/
+    └── moon
         ├── galaxy_id (type = INT)        ->  foreign key
         ├── star_id (type = INT)          ->  foreign key
         ├── planet_id (type = INT)        ->  primary key
