@@ -18,13 +18,13 @@ SET row_security = off;
 
 DROP DATABASE universe;
 --
--- Name: universe; Type: DATABASE; Schema: -; Owner: freecodecamp
+-- Name: universe; Type: DATABASE; Schema: -; Owner: docker
 --
 
 CREATE DATABASE universe WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'C.UTF-8' LC_CTYPE = 'C.UTF-8';
 
 
-ALTER DATABASE universe OWNER TO freecodecamp;
+ALTER DATABASE universe OWNER TO docker;
 
 \connect universe
 
@@ -44,7 +44,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: extra; Type: TABLE; Schema: public; Owner: freecodecamp
+-- Name: extra; Type: TABLE; Schema: public; Owner: docker
 --
 
 CREATE TABLE public.extra (
@@ -54,10 +54,10 @@ CREATE TABLE public.extra (
 );
 
 
-ALTER TABLE public.extra OWNER TO freecodecamp;
+ALTER TABLE public.extra OWNER TO docker;
 
 --
--- Name: extra_extra_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
+-- Name: extra_extra_id_seq; Type: SEQUENCE; Schema: public; Owner: docker
 --
 
 CREATE SEQUENCE public.extra_extra_id_seq
@@ -69,17 +69,17 @@ CREATE SEQUENCE public.extra_extra_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.extra_extra_id_seq OWNER TO freecodecamp;
+ALTER TABLE public.extra_extra_id_seq OWNER TO docker;
 
 --
--- Name: extra_extra_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
+-- Name: extra_extra_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: docker
 --
 
 ALTER SEQUENCE public.extra_extra_id_seq OWNED BY public.extra.extra_id;
 
 
 --
--- Name: galaxy; Type: TABLE; Schema: public; Owner: freecodecamp
+-- Name: galaxy; Type: TABLE; Schema: public; Owner: docker
 --
 
 CREATE TABLE public.galaxy (
@@ -93,10 +93,10 @@ CREATE TABLE public.galaxy (
 );
 
 
-ALTER TABLE public.galaxy OWNER TO freecodecamp;
+ALTER TABLE public.galaxy OWNER TO docker;
 
 --
--- Name: galaxy_galaxy_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
+-- Name: galaxy_galaxy_id_seq; Type: SEQUENCE; Schema: public; Owner: docker
 --
 
 CREATE SEQUENCE public.galaxy_galaxy_id_seq
@@ -108,17 +108,17 @@ CREATE SEQUENCE public.galaxy_galaxy_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.galaxy_galaxy_id_seq OWNER TO freecodecamp;
+ALTER TABLE public.galaxy_galaxy_id_seq OWNER TO docker;
 
 --
--- Name: galaxy_galaxy_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
+-- Name: galaxy_galaxy_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: docker
 --
 
 ALTER SEQUENCE public.galaxy_galaxy_id_seq OWNED BY public.galaxy.galaxy_id;
 
 
 --
--- Name: moon; Type: TABLE; Schema: public; Owner: freecodecamp
+-- Name: moon; Type: TABLE; Schema: public; Owner: docker
 --
 
 CREATE TABLE public.moon (
@@ -134,10 +134,10 @@ CREATE TABLE public.moon (
 );
 
 
-ALTER TABLE public.moon OWNER TO freecodecamp;
+ALTER TABLE public.moon OWNER TO docker;
 
 --
--- Name: moon_moon_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
+-- Name: moon_moon_id_seq; Type: SEQUENCE; Schema: public; Owner: docker
 --
 
 CREATE SEQUENCE public.moon_moon_id_seq
@@ -149,17 +149,17 @@ CREATE SEQUENCE public.moon_moon_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.moon_moon_id_seq OWNER TO freecodecamp;
+ALTER TABLE public.moon_moon_id_seq OWNER TO docker;
 
 --
--- Name: moon_moon_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
+-- Name: moon_moon_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: docker
 --
 
 ALTER SEQUENCE public.moon_moon_id_seq OWNED BY public.moon.moon_id;
 
 
 --
--- Name: planet; Type: TABLE; Schema: public; Owner: freecodecamp
+-- Name: planet; Type: TABLE; Schema: public; Owner: docker
 --
 
 CREATE TABLE public.planet (
@@ -174,10 +174,10 @@ CREATE TABLE public.planet (
 );
 
 
-ALTER TABLE public.planet OWNER TO freecodecamp;
+ALTER TABLE public.planet OWNER TO docker;
 
 --
--- Name: planet_planet_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
+-- Name: planet_planet_id_seq; Type: SEQUENCE; Schema: public; Owner: docker
 --
 
 CREATE SEQUENCE public.planet_planet_id_seq
@@ -189,17 +189,17 @@ CREATE SEQUENCE public.planet_planet_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.planet_planet_id_seq OWNER TO freecodecamp;
+ALTER TABLE public.planet_planet_id_seq OWNER TO docker;
 
 --
--- Name: planet_planet_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
+-- Name: planet_planet_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: docker
 --
 
 ALTER SEQUENCE public.planet_planet_id_seq OWNED BY public.planet.planet_id;
 
 
 --
--- Name: star; Type: TABLE; Schema: public; Owner: freecodecamp
+-- Name: star; Type: TABLE; Schema: public; Owner: docker
 --
 
 CREATE TABLE public.star (
@@ -214,10 +214,10 @@ CREATE TABLE public.star (
 );
 
 
-ALTER TABLE public.star OWNER TO freecodecamp;
+ALTER TABLE public.star OWNER TO docker;
 
 --
--- Name: star_star_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
+-- Name: star_star_id_seq; Type: SEQUENCE; Schema: public; Owner: docker
 --
 
 CREATE SEQUENCE public.star_star_id_seq
@@ -229,52 +229,52 @@ CREATE SEQUENCE public.star_star_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.star_star_id_seq OWNER TO freecodecamp;
+ALTER TABLE public.star_star_id_seq OWNER TO docker;
 
 --
--- Name: star_star_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
+-- Name: star_star_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: docker
 --
 
 ALTER SEQUENCE public.star_star_id_seq OWNED BY public.star.star_id;
 
 
 --
--- Name: extra extra_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
+-- Name: extra extra_id; Type: DEFAULT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.extra ALTER COLUMN extra_id SET DEFAULT nextval('public.extra_extra_id_seq'::regclass);
 
 
 --
--- Name: galaxy galaxy_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
+-- Name: galaxy galaxy_id; Type: DEFAULT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.galaxy ALTER COLUMN galaxy_id SET DEFAULT nextval('public.galaxy_galaxy_id_seq'::regclass);
 
 
 --
--- Name: moon moon_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
+-- Name: moon moon_id; Type: DEFAULT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.moon ALTER COLUMN moon_id SET DEFAULT nextval('public.moon_moon_id_seq'::regclass);
 
 
 --
--- Name: planet planet_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
+-- Name: planet planet_id; Type: DEFAULT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.planet ALTER COLUMN planet_id SET DEFAULT nextval('public.planet_planet_id_seq'::regclass);
 
 
 --
--- Name: star star_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
+-- Name: star star_id; Type: DEFAULT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.star_star_id_seq'::regclass);
 
 
 --
--- Data for Name: extra; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+-- Data for Name: extra; Type: TABLE DATA; Schema: public; Owner: docker
 --
 
 INSERT INTO public.extra VALUES (2, 2, 'EX 139');
@@ -283,7 +283,7 @@ INSERT INTO public.extra VALUES (2, 3, 'EX 112');
 
 
 --
--- Data for Name: galaxy; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+-- Data for Name: galaxy; Type: TABLE DATA; Schema: public; Owner: docker
 --
 
 INSERT INTO public.galaxy VALUES ('Milky Way', 2, 200, 400, 0.5, false, true);
@@ -295,7 +295,7 @@ INSERT INTO public.galaxy VALUES ('NGC 5474', 6, 10, 50, 0.1, true, false);
 
 
 --
--- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+-- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: docker
 --
 
 INSERT INTO public.moon VALUES ('GL 2304 c', 4, 5, 2, 17, false, 0.8, false, NULL);
@@ -321,7 +321,7 @@ INSERT INTO public.moon VALUES ('GL 1545 c', 2, 4, 9, 8, false, 0.3, false, NULL
 
 
 --
--- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+-- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: docker
 --
 
 INSERT INTO public.planet VALUES ('HD 28848 b', 6, 6, 2, false, 265, false, 8.3);
@@ -339,7 +339,7 @@ INSERT INTO public.planet VALUES ('HD 12466 b', 2, 5, 12, false, 522, false, 10.
 
 
 --
--- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+-- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: docker
 --
 
 INSERT INTO public.star VALUES ('SUN', 1, 2, 8, 214, true, false, 4.7510);
@@ -365,42 +365,42 @@ INSERT INTO public.star VALUES ('HD 18794', 10, 1, 15, 107, false, false, 1.9039
 
 
 --
--- Name: extra_extra_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
+-- Name: extra_extra_id_seq; Type: SEQUENCE SET; Schema: public; Owner: docker
 --
 
 SELECT pg_catalog.setval('public.extra_extra_id_seq', 1, false);
 
 
 --
--- Name: galaxy_galaxy_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
+-- Name: galaxy_galaxy_id_seq; Type: SEQUENCE SET; Schema: public; Owner: docker
 --
 
 SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 1, false);
 
 
 --
--- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
+-- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: docker
 --
 
 SELECT pg_catalog.setval('public.moon_moon_id_seq', 1, false);
 
 
 --
--- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
+-- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: docker
 --
 
 SELECT pg_catalog.setval('public.planet_planet_id_seq', 1, false);
 
 
 --
--- Name: star_star_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
+-- Name: star_star_id_seq; Type: SEQUENCE SET; Schema: public; Owner: docker
 --
 
 SELECT pg_catalog.setval('public.star_star_id_seq', 1, false);
 
 
 --
--- Name: extra extra_extra_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: extra extra_extra_id_key; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.extra
@@ -408,7 +408,7 @@ ALTER TABLE ONLY public.extra
 
 
 --
--- Name: extra extra_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: extra extra_pkey; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.extra
@@ -416,7 +416,7 @@ ALTER TABLE ONLY public.extra
 
 
 --
--- Name: galaxy galaxy_galaxy_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: galaxy galaxy_galaxy_id_key; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.galaxy
@@ -424,7 +424,7 @@ ALTER TABLE ONLY public.galaxy
 
 
 --
--- Name: galaxy galaxy_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: galaxy galaxy_pkey; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.galaxy
@@ -432,7 +432,7 @@ ALTER TABLE ONLY public.galaxy
 
 
 --
--- Name: moon moon_moon_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: moon moon_moon_id_key; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.moon
@@ -440,7 +440,7 @@ ALTER TABLE ONLY public.moon
 
 
 --
--- Name: moon moon_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: moon moon_pkey; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.moon
@@ -448,7 +448,7 @@ ALTER TABLE ONLY public.moon
 
 
 --
--- Name: planet planet_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: planet planet_pkey; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.planet
@@ -456,7 +456,7 @@ ALTER TABLE ONLY public.planet
 
 
 --
--- Name: planet planet_planet_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: planet planet_planet_id_key; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.planet
@@ -464,7 +464,7 @@ ALTER TABLE ONLY public.planet
 
 
 --
--- Name: star star_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: star star_pkey; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.star
@@ -472,7 +472,7 @@ ALTER TABLE ONLY public.star
 
 
 --
--- Name: star star_star_id_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: star star_star_id_key; Type: CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.star
@@ -480,7 +480,7 @@ ALTER TABLE ONLY public.star
 
 
 --
--- Name: moon moon_planet_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: moon moon_planet_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.moon
@@ -488,7 +488,7 @@ ALTER TABLE ONLY public.moon
 
 
 --
--- Name: planet planet_star_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: planet planet_star_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.planet
@@ -496,7 +496,7 @@ ALTER TABLE ONLY public.planet
 
 
 --
--- Name: star star_galaxy_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: star star_galaxy_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: docker
 --
 
 ALTER TABLE ONLY public.star
